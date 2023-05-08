@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>PokeDEX</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.png">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.6/dist/full.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+</head>
+<body>
+    <div class="navbar bg-sky-100 shadow-xl text-zinc-800 fixed to-0 z-50">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <label tabindex="0" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+          </label>
+          <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+            <li><a>Home</a></li>
+            <li><a>Added Pokemons</a></li>
+            <li tabindex="0">
+              <a>
+                Lainnya
+                <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
+              </a>
+              <ul class="bg-blue-500 p-2">
+                <li><a>Pokemon Terpopuler</a></li>
+                <li><a>Tentang Pokemon</a></li>
+                <li><a>News</a></li>
+              </ul>
+          </ul>
+        </div>
+        <a class="btn btn-ghost normal-case text-xl">PokeDEX</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a href="#index" class="hover:bg-blue-500">Home</a></li>
+          <li><a class="hover:bg-blue-500">Added Pokemons</a></li>
+          <li tabindex="0">
+            <a class="hover:bg-blue-500">
+              Lainnya
+              <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
+            </a>
+            <ul class="bg-blue-500 p-2">
+              <li><a class="hover:bg-blue-500" href="#pokemonterpopuler">Pokemon Terpopuler</a></li>
+              <li><a class="hover:bg-blue-500" href="#tentang">Tentang Pokemon</a></li>
+              <li><a>News</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <a id="btn-alert" class="btn bg-blue-500 hover:bg-blue-700 border-0">Get started</a>
+      </div>
+    </div>
+
+    <div id="index" class="tabs pt-24 py-10">
+      <a class="tab hover:bg-blue-500 ml-16" href="#">AIR</a> 
+      <a class="tab hover:bg-blue-500" href="#">ANGIN</a>
+      <a class="tab hover:bg-blue-500" href="#">TANAH</a>
+      <a class="tab hover:bg-blue-500" href="#">API</a> 
+    </div>
+    
+    <div class="hero min-h">
+      <div class="hero-content flex-col lg:flex-row-reverse ">
+        <img src="/img/pokemonHero.jpeg" class="max-w-sm rounded-lg shadow-2xl" />
+        <img src="/img/pokemonHero.jpeg" class="max-w-sm rounded-lg shadow-2xl" />
+        <div>
+          <h1 class="text-5xl font-bold">What's New!</h1>
+          <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+          <button id="btn-alert-btn1" class="btn btn-primary bg-blue-500 hover:bg-blue-700 border-0">Get Started</button>
+        </div>
+      </div>
+    </div>
+
+    
+    <div id="pokemonterpopuler" class="grid">
+      <h1 class="text-5xl font-bold ml-12 mt-12">Pokemons Terpopuler</h1>
+      <p class="mt-4 ml-12">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 m-8 mt-8">
+        <div class="card bg-base-100 shadow-xl">
+          <figure><img src="/img/Hero1 1920x1080.jpg" alt="Shoes" /></figure>
+          <div class="card-body px-4 py-3">
+            <h2 class="card-title text-lg font-medium text-gray-800">Pokemon Koraidon</h2>
+            <p class="card-text text-sm font-medium text-gray-500 mt-1 mb-2">Type: Api</p>
+            <p class="card-text text-sm font-medium text-yellow-500 mb-4">
+              Rating: 4.5/5
+              <svg class="inline-block h-4 w-4 fill-current text-yellow-500 ml-1 mb-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" id="star"><defs><linearGradient id="b" x1="-1483.396" x2="-1155.767" y1="1056.787" y2="1056.787" gradientUnits="userSpaceOnUse" xlink:href="#a"></linearGradient><linearGradient id="a"><stop offset="0" stop-color="#fcd635"></stop><stop offset="1" stop-color="#f7a928"></stop></linearGradient></defs><path fill="url(#b)" d="M-1220 1212.362c-11.656 8.326-86.446-44.452-100.77-44.568-14.324-.115-89.956 51.449-101.476 42.936-11.52-8.513 15.563-95.952 11.247-109.61-4.316-13.658-76.729-69.655-72.193-83.242 4.537-13.587 96.065-14.849 107.721-23.175 11.656-8.325 42.535-94.497 56.86-94.382 14.323.116 43.807 86.775 55.327 95.288 11.52 8.512 103.017 11.252 107.334 24.91 4.316 13.658-68.99 68.479-73.527 82.066-4.536 13.587 21.133 101.451 9.477 109.777z" color="#000" overflow="visible" transform="matrix(.04574 0 0 .04561 68.85 -40.34)" style="marker:none"></path></svg>
+            </p>
+            <p class="card-text text-sm font-medium text-black-500 mt-1 mb-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores adipisci, corporis voluptates illo obcaecati, nisi dolor possimus rem sequi accusamus quas, a similique harum tempore quos! Reiciendis alias saepe esse.</p>
+            <div class="card-actions flex justify-end mt-auto">
+              <button id="btn-alert-btn" class="btn btn-primary bg-blue-500 hover:bg-blue-700 text-white font-medium px-4 py-2 rounded-md focus:outline-none focus:shadow-outline-blue" type="button">
+                Add
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-base-100 shadow-xl">
+          <figure><img src="/img/Hero2-1920x1080.jpg" alt="Shoes" /></figure>
+          <div class="card-body px-4 py-3">
+            <h2 class="card-title text-lg font-medium text-gray-800">Xerneas Reindeer</h2>
+            <p class="card-text text-sm font-medium text-gray-500 mt-1 mb-2">Type: Peri</p>
+            <p class="card-text text-sm font-medium text-yellow-500 mb-4">
+              Rating: 4.5/5
+              <svg class="inline-block h-4 w-4 fill-current text-yellow-500 ml-1 mb-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" id="star"><defs><linearGradient id="b" x1="-1483.396" x2="-1155.767" y1="1056.787" y2="1056.787" gradientUnits="userSpaceOnUse" xlink:href="#a"></linearGradient><linearGradient id="a"><stop offset="0" stop-color="#fcd635"></stop><stop offset="1" stop-color="#f7a928"></stop></linearGradient></defs><path fill="url(#b)" d="M-1220 1212.362c-11.656 8.326-86.446-44.452-100.77-44.568-14.324-.115-89.956 51.449-101.476 42.936-11.52-8.513 15.563-95.952 11.247-109.61-4.316-13.658-76.729-69.655-72.193-83.242 4.537-13.587 96.065-14.849 107.721-23.175 11.656-8.325 42.535-94.497 56.86-94.382 14.323.116 43.807 86.775 55.327 95.288 11.52 8.512 103.017 11.252 107.334 24.91 4.316 13.658-68.99 68.479-73.527 82.066-4.536 13.587 21.133 101.451 9.477 109.777z" color="#000" overflow="visible" transform="matrix(.04574 0 0 .04561 68.85 -40.34)" style="marker:none"></path></svg>
+            </p>
+            <p class="card-text text-sm font-medium text-black-500 mt-1 mb-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores adipisci, corporis voluptates illo obcaecati, nisi dolor possimus rem sequi accusamus quas, a similique harum tempore quos! Reiciendis alias saepe esse.</p>
+            <div class="card-actions flex justify-end mt-auto">
+              <button class="btn btn-primary bg-blue-500 hover:bg-blue-700 text-white font-medium px-4 py-2 rounded-md focus:outline-none focus:shadow-outline-blue" type="button">
+                Add
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-base-100 shadow-xl">
+          <figure><img src="/img/Hero3-1920x1080.jpg" alt="Shoes" /></figure>
+          <div class="card-body px-4 py-3">
+            <h2 class="card-title text-lg font-medium text-gray-800">Zygarde</h2>
+            <p class="card-text text-sm font-medium text-gray-500 mt-1 mb-2">Type: Batu</p>
+            <p class="card-text text-sm font-medium text-yellow-500 mb-4">
+              Rating: 4.5/5
+              <svg class="inline-block h-4 w-4 fill-current text-yellow-500 ml-1 mb-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" id="star"><defs><linearGradient id="b" x1="-1483.396" x2="-1155.767" y1="1056.787" y2="1056.787" gradientUnits="userSpaceOnUse" xlink:href="#a"></linearGradient><linearGradient id="a"><stop offset="0" stop-color="#fcd635"></stop><stop offset="1" stop-color="#f7a928"></stop></linearGradient></defs><path fill="url(#b)" d="M-1220 1212.362c-11.656 8.326-86.446-44.452-100.77-44.568-14.324-.115-89.956 51.449-101.476 42.936-11.52-8.513 15.563-95.952 11.247-109.61-4.316-13.658-76.729-69.655-72.193-83.242 4.537-13.587 96.065-14.849 107.721-23.175 11.656-8.325 42.535-94.497 56.86-94.382 14.323.116 43.807 86.775 55.327 95.288 11.52 8.512 103.017 11.252 107.334 24.91 4.316 13.658-68.99 68.479-73.527 82.066-4.536 13.587 21.133 101.451 9.477 109.777z" color="#000" overflow="visible" transform="matrix(.04574 0 0 .04561 68.85 -40.34)" style="marker:none"></path></svg>
+            </p>
+            <p class="card-text text-sm font-medium text-black-500 mt-1 mb-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores adipisci, corporis voluptates illo obcaecati, nisi dolor possimus rem sequi accusamus quas, a similique harum tempore quos! Reiciendis alias saepe esse.</p>
+            <div class="card-actions flex justify-end mt-auto">
+              <button class="btn btn-primary bg-blue-500 hover:bg-blue-700 text-white font-medium px-4 py-2 rounded-md focus:outline-none focus:shadow-outline-blue" type="button">
+                Add
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-base-100 shadow-xl">
+          <figure><img src="/img/Hero4-1920x1080.jpg" alt="Shoes" /></figure>
+          <div class="card-body px-4 py-3">
+            <h2 class="card-title text-lg font-medium text-gray-800">Dragonite</h2>
+            <p class="card-text text-sm font-medium text-gray-500 mt-1 mb-2">Type: Naga</p>
+            <p class="card-text text-sm font-medium text-yellow-500 mb-4">
+              Rating: 4.5/5
+              <svg class="inline-block h-4 w-4 fill-current text-yellow-500 ml-1 mb-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" id="star"><defs><linearGradient id="b" x1="-1483.396" x2="-1155.767" y1="1056.787" y2="1056.787" gradientUnits="userSpaceOnUse" xlink:href="#a"></linearGradient><linearGradient id="a"><stop offset="0" stop-color="#fcd635"></stop><stop offset="1" stop-color="#f7a928"></stop></linearGradient></defs><path fill="url(#b)" d="M-1220 1212.362c-11.656 8.326-86.446-44.452-100.77-44.568-14.324-.115-89.956 51.449-101.476 42.936-11.52-8.513 15.563-95.952 11.247-109.61-4.316-13.658-76.729-69.655-72.193-83.242 4.537-13.587 96.065-14.849 107.721-23.175 11.656-8.325 42.535-94.497 56.86-94.382 14.323.116 43.807 86.775 55.327 95.288 11.52 8.512 103.017 11.252 107.334 24.91 4.316 13.658-68.99 68.479-73.527 82.066-4.536 13.587 21.133 101.451 9.477 109.777z" color="#000" overflow="visible" transform="matrix(.04574 0 0 .04561 68.85 -40.34)" style="marker:none"></path></svg>
+            </p>
+            <p class="card-text text-sm font-medium text-black-500 mt-1 mb-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores adipisci, corporis voluptates illo obcaecati, nisi dolor possimus rem sequi accusamus quas, a similique harum tempore quos! Reiciendis alias saepe esse.</p>
+            <div class="card-actions flex justify-end mt-auto">
+              <button class="btn btn-primary bg-blue-500 hover:bg-blue-700 text-white font-medium px-4 py-2 rounded-md focus:outline-none focus:shadow-outline-blue" type="button">
+                Add
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 m-8 mt-2">
+        <div class="card bg-base-100 shadow-xl ">
+          <figure><img src="/img/Hero1 1920x1080.jpg" alt="Shoes" /></figure>
+          <div class="card-body px-4 py-3">
+            <h2 class="card-title text-lg font-medium text-gray-800">Name Pokemon</h2>
+            <p class="card-text text-sm font-medium text-gray-500 mt-1 mb-2">Type: Grass</p>
+            <p class="card-text text-sm font-medium text-yellow-500 mb-4">
+              Rating: 4.5/5
+              <svg class="inline-block h-4 w-4 fill-current text-yellow-500 ml-1 mb-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" id="star"><defs><linearGradient id="b" x1="-1483.396" x2="-1155.767" y1="1056.787" y2="1056.787" gradientUnits="userSpaceOnUse" xlink:href="#a"></linearGradient><linearGradient id="a"><stop offset="0" stop-color="#fcd635"></stop><stop offset="1" stop-color="#f7a928"></stop></linearGradient></defs><path fill="url(#b)" d="M-1220 1212.362c-11.656 8.326-86.446-44.452-100.77-44.568-14.324-.115-89.956 51.449-101.476 42.936-11.52-8.513 15.563-95.952 11.247-109.61-4.316-13.658-76.729-69.655-72.193-83.242 4.537-13.587 96.065-14.849 107.721-23.175 11.656-8.325 42.535-94.497 56.86-94.382 14.323.116 43.807 86.775 55.327 95.288 11.52 8.512 103.017 11.252 107.334 24.91 4.316 13.658-68.99 68.479-73.527 82.066-4.536 13.587 21.133 101.451 9.477 109.777z" color="#000" overflow="visible" transform="matrix(.04574 0 0 .04561 68.85 -40.34)" style="marker:none"></path></svg>
+            </p>
+            <p class="card-text text-sm font-medium text-black-500 mt-1 mb-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores adipisci, corporis voluptates illo obcaecati, nisi dolor possimus rem sequi accusamus quas, a similique harum tempore quos! Reiciendis alias saepe esse.</p>
+            <div class="card-actions flex justify-end mt-auto">
+              <button id="btn-alert" class="btn btn-primary bg-blue-500 hover:bg-blue-700 text-white font-medium px-4 py-2 rounded-md focus:outline-none focus:shadow-outline-blue" type="button">
+                Add
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-base-100 shadow-xl">
+          <figure><img src="/img/Hero2-1920x1080.jpg" alt="Shoes" /></figure>
+          <div class="card-body px-4 py-3">
+            <h2 class="card-title text-lg font-medium text-gray-800">Name Pokemon</h2>
+            <p class="card-text text-sm font-medium text-gray-500 mt-1 mb-2">Type: Grass</p>
+            <p class="card-text text-sm font-medium text-yellow-500 mb-4">
+              Rating: 4.5/5
+              <svg class="inline-block h-4 w-4 fill-current text-yellow-500 ml-1 mb-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" id="star"><defs><linearGradient id="b" x1="-1483.396" x2="-1155.767" y1="1056.787" y2="1056.787" gradientUnits="userSpaceOnUse" xlink:href="#a"></linearGradient><linearGradient id="a"><stop offset="0" stop-color="#fcd635"></stop><stop offset="1" stop-color="#f7a928"></stop></linearGradient></defs><path fill="url(#b)" d="M-1220 1212.362c-11.656 8.326-86.446-44.452-100.77-44.568-14.324-.115-89.956 51.449-101.476 42.936-11.52-8.513 15.563-95.952 11.247-109.61-4.316-13.658-76.729-69.655-72.193-83.242 4.537-13.587 96.065-14.849 107.721-23.175 11.656-8.325 42.535-94.497 56.86-94.382 14.323.116 43.807 86.775 55.327 95.288 11.52 8.512 103.017 11.252 107.334 24.91 4.316 13.658-68.99 68.479-73.527 82.066-4.536 13.587 21.133 101.451 9.477 109.777z" color="#000" overflow="visible" transform="matrix(.04574 0 0 .04561 68.85 -40.34)" style="marker:none"></path></svg>
+            </p>
+            <p class="card-text text-sm font-medium text-black-500 mt-1 mb-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores adipisci, corporis voluptates illo obcaecati, nisi dolor possimus rem sequi accusamus quas, a similique harum tempore quos! Reiciendis alias saepe esse.</p>
+            <div class="card-actions flex justify-end mt-auto">
+              <button class="btn btn-primary bg-blue-500 hover:bg-blue-700 text-white font-medium px-4 py-2 rounded-md focus:outline-none focus:shadow-outline-blue" type="button">
+                Add
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-base-100 shadow-xl">
+          <figure><img src="/img/Hero3-1920x1080.jpg" alt="Shoes" /></figure>
+          <div class="card-body px-4 py-3">
+            <h2 class="card-title text-lg font-medium text-gray-800">Name Pokemon</h2>
+            <p class="card-text text-sm font-medium text-gray-500 mt-1 mb-2">Type: Grass</p>
+            <p class="card-text text-sm font-medium text-yellow-500 mb-4">
+              Rating: 4.5/5
+              <svg class="inline-block h-4 w-4 fill-current text-yellow-500 ml-1 mb-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" id="star"><defs><linearGradient id="b" x1="-1483.396" x2="-1155.767" y1="1056.787" y2="1056.787" gradientUnits="userSpaceOnUse" xlink:href="#a"></linearGradient><linearGradient id="a"><stop offset="0" stop-color="#fcd635"></stop><stop offset="1" stop-color="#f7a928"></stop></linearGradient></defs><path fill="url(#b)" d="M-1220 1212.362c-11.656 8.326-86.446-44.452-100.77-44.568-14.324-.115-89.956 51.449-101.476 42.936-11.52-8.513 15.563-95.952 11.247-109.61-4.316-13.658-76.729-69.655-72.193-83.242 4.537-13.587 96.065-14.849 107.721-23.175 11.656-8.325 42.535-94.497 56.86-94.382 14.323.116 43.807 86.775 55.327 95.288 11.52 8.512 103.017 11.252 107.334 24.91 4.316 13.658-68.99 68.479-73.527 82.066-4.536 13.587 21.133 101.451 9.477 109.777z" color="#000" overflow="visible" transform="matrix(.04574 0 0 .04561 68.85 -40.34)" style="marker:none"></path></svg>
+            </p>
+            <p class="card-text text-sm font-medium text-black-500 mt-1 mb-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores adipisci, corporis voluptates illo obcaecati, nisi dolor possimus rem sequi accusamus quas, a similique harum tempore quos! Reiciendis alias saepe esse.</p>
+            <div class="card-actions flex justify-end mt-auto">
+              <button class="btn btn-primary bg-blue-500 hover:bg-blue-700 text-white font-medium px-4 py-2 rounded-md focus:outline-none focus:shadow-outline-blue" type="button">
+                Add
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-base-100 shadow-xl">
+          <figure><img src="/img/Hero4-1920x1080.jpg" alt="Shoes" /></figure>
+          <div class="card-body px-4 py-3">
+            <h2 class="card-title text-lg font-medium text-gray-800">Name Pokemon</h2>
+            <p class="card-text text-sm font-medium text-gray-500 mt-1 mb-2">Type: Grass</p>
+            <p class="card-text text-sm font-medium text-yellow-500 mb-4">
+              Rating: 4.5/5
+              <svg class="inline-block h-4 w-4 fill-current text-yellow-500 ml-1 mb-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" id="star"><defs><linearGradient id="b" x1="-1483.396" x2="-1155.767" y1="1056.787" y2="1056.787" gradientUnits="userSpaceOnUse" xlink:href="#a"></linearGradient><linearGradient id="a"><stop offset="0" stop-color="#fcd635"></stop><stop offset="1" stop-color="#f7a928"></stop></linearGradient></defs><path fill="url(#b)" d="M-1220 1212.362c-11.656 8.326-86.446-44.452-100.77-44.568-14.324-.115-89.956 51.449-101.476 42.936-11.52-8.513 15.563-95.952 11.247-109.61-4.316-13.658-76.729-69.655-72.193-83.242 4.537-13.587 96.065-14.849 107.721-23.175 11.656-8.325 42.535-94.497 56.86-94.382 14.323.116 43.807 86.775 55.327 95.288 11.52 8.512 103.017 11.252 107.334 24.91 4.316 13.658-68.99 68.479-73.527 82.066-4.536 13.587 21.133 101.451 9.477 109.777z" color="#000" overflow="visible" transform="matrix(.04574 0 0 .04561 68.85 -40.34)" style="marker:none"></path></svg>
+            </p>
+            <p class="card-text text-sm font-medium text-black-500 mt-1 mb-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores adipisci, corporis voluptates illo obcaecati, nisi dolor possimus rem sequi accusamus quas, a similique harum tempore quos! Reiciendis alias saepe esse.</p>
+            <div class="card-actions flex justify-end mt-auto">
+              <button class="btn btn-primary bg-blue-500 hover:bg-blue-700 text-white font-medium px-4 py-2 rounded-md focus:outline-none focus:shadow-outline-blue" type="button">
+                Add
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card lg:card-side bg-base-100 shadow-xl m-10">
+      <figure><img src="/img/CardPokemon.jpg" alt="Album"/></figure>
+      <div class="card-body w-5/6">
+        <h2 class="card-title">New album is released!</h2>
+        <p>Click the button to listen on Spotiwhy app.</p>
+        <div class="card-actions justify-end">
+          <button class="btn btn-primary bg-blue-500 hover:bg-blue-700 border-0">Watch Now</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="tentang" class="box-about">
+      <div class="container mx-auto flex flex-wrap py-12">
+        <div class="w-full md:w-1/2 mb-6 md:mb-5 relative">
+          <div class="carousel ml-5">
+            <div class="carousel-item w-5/6">
+              <img src="img/Hero-1920x1080.jpg" alt="Drink" />
+            </div> 
+            <div class="carousel-item w-5/6">
+              <img src="img/Hero1 1920x1080.jpg" alt="Drink" />
+            </div> 
+            <div class="carousel-item w-5/6">
+              <img src="img/Hero2-1920x1080.jpg" alt="Drink" />
+            </div>
+            <div class="carousel-item w-5/6">
+              <img src="img/Hero3-1920x1080.jpg" alt="Drink" />
+            </div>
+            <div class="carousel-item w-5/6">
+              <img src="img/Hero4-1920x1080.jpg" alt="Drink" />
+            </div>
+
+          </div>
+        </div>
+        <div class="w-full md:w-1/2">
+          <h1 class="text-5xl font-bold text-gray-800 mb-6 ml-4">Tentang Pokemon</h1>
+          <p class="text-xl text-gray-600 mb-6 ml-4">Discover our latest collection of bikinis that will make you feel confident and beautiful.</p>
+          <a href="#"  id="btn-alert1" class="inline-block bg-blue-500 text-white py-3 px-8 rounded-full font-bold hover:bg-blue-600 ml-4">Go Now</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero min-h">
+      <div class="hero-content flex-col lg:flex-row-reverse mx-32">
+        <div class="form-control">
+          <label class="label">
+            <span class="label-text">Your Email</span>
+          </label>
+          <label class="input-group">
+            <span>Email</span>
+            <input type="text" placeholder="info@site.com" class="input input-bordered" />
+            <button class="btn bg-blue-500 border-0">Send</button>
+          </label>
+          
+        </div>
+        <div>
+          <h1 class="text-5xl font-bold">Newsletter</h1>
+          <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <a href="#index" class="btn btn-block rounded-none">Back To Top</a>
+    </div>
+    
+    <footer class="footer p-10 bg-sky-100 text-zinc-800">
+      <div>
+        <span class="footer-title">Services</span> 
+        <a class="link link-hover">Home</a>
+        <a class="link link-hover">Pokemons Popular</a>
+        <a class="link link-hover">Album</a>
+        <a class="link link-hover">News</a>
+      </div> 
+      <div>
+        <span class="footer-title">Company</span> 
+        <a class="link link-hover">About us</a>
+        <a class="link link-hover">Contact</a>
+      </div> 
+      <div>
+        <span class="footer-title">Legal</span> 
+        <a class="link link-hover">Terms of use</a>
+        <a class="link link-hover">Privacy policy</a>
+        <a class="link link-hover">Cookie policy</a>
+      </div>
+    </footer>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js" crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function() {
+      $('#btn-alert').click(function(event) {
+        event.preventDefault();
+        alert('Cooming Soon this Feature is available');
+      });
+    });
+
+    $(document).ready(function() {
+      $('#btn-alert1').click(function(event) {
+        event.preventDefault();
+        alert('Cooming Soon this Feature is available');
+      });
+    });
+
+    $(document).ready(function() {
+      $('button').click(function(event) {
+        event.preventDefault();
+        alert('Cooming Soon this Feature is available');
+      });
+    });
+  </script>
+  <script src="app.js"></script>
+</body>
+</html>
